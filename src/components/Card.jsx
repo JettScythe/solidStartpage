@@ -1,3 +1,4 @@
+import { Divider } from "@hope-ui/solid"
 import '../css/Card.css'
 
 
@@ -9,7 +10,7 @@ const Card = () => {
             <p>
                 Social
             </p>
-            <hr></hr>
+            <Divider />
             <a href='https://twitter.com' class="row">Twitter</a>
             <a href='https://noise.cash' class="row">Noise</a>
             <a href='https://memo.cash' class="row">Memo</a>
@@ -21,7 +22,7 @@ const Card = () => {
             <p>
                 Dev
             </p>
-            <hr></hr>
+            <Divider />
             <a href='https://github.com' class="row">Github</a>
             <a href='https://gist.github.com' class="row">Gist</a>
             <a href='https://web.compass.lighthouselabs.ca/' class="row">Compass</a>
@@ -33,7 +34,7 @@ const Card = () => {
             <p>
                 Media
             </p>
-            <hr></hr>
+            <Divider />
             <a href='https://torrents.jettscythe.local' class="row">Torrents</a>
             <a href='https://jellyfin.jettscythe.xyz' class="row">Jellyfin</a>
             <a href='https://youtube.com' class="row">Youtube </a>
@@ -45,7 +46,7 @@ const Card = () => {
             <p>
                 Local
             </p>
-            <hr></hr>
+            <Divider />
               <a href='https://sonarr.jettscythe.local' class="row">sonarr</a>
               <a href='https://radarr.jettscythe.local' class="row">radarr</a>
               <a href='https://lidarr.jettscythe.local' class="row">lidarr</a>

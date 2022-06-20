@@ -3,6 +3,8 @@ import {
   IconButton,
   useColorMode,
   useColorModeValue,
+  Spacer,
+  Flex
 } from "@hope-ui/solid";
 import { IconMoon } from "../icons/IconMoon";
 import { IconSun } from "../icons/IconSun";
@@ -14,6 +16,8 @@ const Header = () => {
 
   return (
     <Container h="$full">
+      <Flex>
+      <Spacer />
       <CenteredModal />
       <IconButton
         aria-label="Toggle color mode"
@@ -25,6 +29,7 @@ const Header = () => {
         icon={colorModeButtonIcon}
         onClick={toggleColorMode}
       />
+      </Flex>
     </Container>
   );
 };
