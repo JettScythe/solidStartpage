@@ -1,4 +1,4 @@
-import { Divider } from "@hope-ui/solid"
+import { Anchor, Divider } from "@hope-ui/solid"
 import '../css/Card.css'
 
 
@@ -11,10 +11,10 @@ const Card = () => {
                 Social
             </p>
             <Divider />
-            <a href='https://twitter.com' class="row">Twitter</a>
-            <a href='https://noise.cash' class="row">Noise</a>
-            <a href='https://memo.cash' class="row">Memo</a>
-            <a href='https://member.cash' class="row">Member</a>
+            <Anchor href='https://twitter.com' class="row" external>Twitter</Anchor>
+            <Anchor href='https://noise.cash' class="row" external>Noise</Anchor>
+            <Anchor href='https://memo.cash' class="row" external>Memo</Anchor>
+            <Anchor href='https://member.cash' class="row" external>Member</Anchor>
         </div>
       </div>
       <div class="column">
@@ -23,10 +23,10 @@ const Card = () => {
                 Dev
             </p>
             <Divider />
-            <a href='https://github.com' class="row">Github</a>
-            <a href='https://gist.github.com' class="row">Gist</a>
-            <a href='https://web.compass.lighthouselabs.ca/' class="row">Compass</a>
-            <a href='https://udemy.com' class="row">Udemy</a>
+            <Anchor href='https://github.com' class="row" external>Github</Anchor>
+            <Anchor href='https://gist.github.com' class="row" external>Gist</Anchor>
+            <Anchor href='https://web.compass.lighthouselabs.ca/' class="row" external>Compass</Anchor>
+            <Anchor href='https://udemy.com' class="row" external>Udemy</Anchor>
         </div>
       </div>
       <div class="column">
@@ -35,10 +35,10 @@ const Card = () => {
                 Media
             </p>
             <Divider />
-            <a href='https://torrents.jettscythe.local' class="row">Torrents</a>
-            <a href='https://jellyfin.jettscythe.xyz' class="row">Jellyfin</a>
-            <a href='https://youtube.com' class="row">Youtube </a>
-            <a href='https://seerr.jettscythe.local' class="row">Seerr</a>
+            <Anchor href='https://torrents.jettscythe.local' class="row" external>Torrents</Anchor>
+            <Anchor href='https://jellyfin.jettscythe.xyz' class="row" external>Jellyfin</Anchor>
+            <Anchor href='https://youtube.com' class="row" external>Youtube </Anchor>
+            <Anchor href='https://seerr.jettscythe.local' class="row" external>Seerr</Anchor>
         </div>
       </div>
       <div class="column">
@@ -47,10 +47,10 @@ const Card = () => {
                 Local
             </p>
             <Divider />
-              <a href='https://sonarr.jettscythe.local' class="row">sonarr</a>
-              <a href='https://radarr.jettscythe.local' class="row">radarr</a>
-              <a href='https://lidarr.jettscythe.local' class="row">lidarr</a>
-              <a href='https://prowlarr.jettscythe.local' class="row">prowlarr</a>
+              <Anchor href='https://sonarr.jettscythe.local' class="row" external>sonarr</Anchor>
+              <Anchor href='https://radarr.jettscythe.local' class="row" external>radarr</Anchor>
+              <Anchor href='https://lidarr.jettscythe.local' class="row" external>lidarr</Anchor>
+              <Anchor href='https://prowlarr.jettscythe.local' class="row" external>prowlarr</Anchor>
         </div>
       </div>
     </div>
