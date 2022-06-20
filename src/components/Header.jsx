@@ -8,7 +8,7 @@ import {
 } from "@hope-ui/solid";
 import { IconMoon } from "../icons/IconMoon";
 import { IconSun } from "../icons/IconSun";
-import CenteredModal from "./Modal";
+import { CenteredModal } from "./Modal";
 
 const Header = () => {
   const { toggleColorMode } = useColorMode();

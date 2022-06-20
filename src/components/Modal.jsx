@@ -15,11 +15,12 @@ import {
   IconButton,
 } from "@hope-ui/solid";
 import { IconGear } from "../icons/IconGear";
-
+import { For } from "solid-js";
+import { useSearchProvider } from "../helpers/SearchProvider";
 
 const CenteredModal = () => {
   const { isOpen, onOpen, onClose } = createDisclosure();
-
+  const [state, { setSearchProvider }] = useSearchProvider();
   return (
     <>
       <IconButton
@@ -31,7 +32,7 @@ const CenteredModal = () => {
         fontSize="$lg"
         icon={IconGear}
         onClick={onOpen}
-      />
+        />
       <Modal centered opened={isOpen()} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
@@ -40,13 +41,20 @@ const CenteredModal = () => {
           <ModalBody>
             <FormControl>
               <FormLabel>Choose a search provider</FormLabel>
-              <SimpleSelect placeholder="Choose a search provider" defaultValue="searx">
-                <SimpleOption value="searx">SearX</SimpleOption>
-                <SimpleOption value="google">Google</SimpleOption>
-                <SimpleOption value="brave">Brave</SimpleOption>
-                <SimpleOption value="ddg">DDG</SimpleOption>
-                <SimpleOption value="bing">Bing</SimpleOption>
-                <SimpleOption value="yahoo">Yahoo</SimpleOption>
+              <SimpleSelect
+                placeholder="Choose a search provider"
+                defaultValue={state()}
+                onChange={setSearchProvider}
+              >
+                <For
+                  each={["SearX", "Google", "Brave", "DDG", "Bing", "Yahoo"]}
+                >
+                  {(item) => (
+                    <SimpleOption value={item.toLowerCase()}>
+                      {item}
+                    </SimpleOption>
+                  )}
+                </For>
               </SimpleSelect>
             </FormControl>
           </ModalBody>
@@ -59,4 +67,4 @@ const CenteredModal = () => {
   );
 };
 
-export default CenteredModal;
+export { CenteredModal };
