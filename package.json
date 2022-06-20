@@ -10,15 +10,21 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "pre-commit": "^1.2.2",
     "vite": "^2.9.9",
     "vite-plugin-solid": "^2.2.6"
   },
   "dependencies": {
     "@hope-ui/solid": "^0.6.2",
     "@stitches/core": "^1.2.8",
-    "commitizen": "^4.2.4",
-    "pre-commit": "^1.2.2",
     "solid-js": "^1.4.2",
     "solid-transition-group": "^0.0.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
