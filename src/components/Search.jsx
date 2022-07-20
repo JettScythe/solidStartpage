@@ -25,9 +25,9 @@ const Search = () => {
   };
   return (
     <FormControl>
-      <FormLabel for="search">Search</FormLabel>
+      <FormLabel for="search" color="#fff">Search</FormLabel>
       <InputGroup>
-        <Input id="search" type="search" onChange={handleInput} />
+        <Input id="search" type="search" bgColor="$card" onChange={handleInput} />
         <InputRightElement>
           <IconButton
             variant="outline"

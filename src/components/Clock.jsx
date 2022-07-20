@@ -1,5 +1,6 @@
 import { createSignal, createEffect } from "solid-js";
 import { formatSmallTime, formatTime } from "../helpers/formatters";
+import "../css/Clock.css";
 
 const Clock = () => {
   const [date, setDate] = createSignal(new Date());
@@ -18,7 +19,7 @@ const Clock = () => {
   });
 
   return (
-    <div>
+    <div class="clock">
       <div>{clock()}</div>
       <div>{date().toLocaleDateString()}</div>
     </div>

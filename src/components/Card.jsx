@@ -37,7 +37,7 @@ const Card = () => {
             <Divider />
             <Anchor href='https://torrents.jettscythe.local' class="row" external>Torrents</Anchor>
             <Anchor href='https://jellyfin.jettscythe.xyz' class="row" external>Jellyfin</Anchor>
-            <Anchor href='https://youtube.com' class="row" external>Youtube </Anchor>
+            <Anchor href='https://youtube.com' class="row" external>Youtube</Anchor>
             <Anchor href='https://seerr.jettscythe.local' class="row" external>Seerr</Anchor>
         </div>
       </div>
