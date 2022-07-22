@@ -3,17 +3,11 @@ import Search from "./components/Search";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import { Container, Divider, Flex } from "@hope-ui/solid";
-import bg from "./assets/bg.jpeg";
+import "./css/App.css";
 
 function App() {
   return (
-    <Divider
-      css={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-    >
+    <Divider id="bg-div">
       <Flex direction="column">
         <Header />
         <Container>
