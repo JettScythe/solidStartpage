@@ -10,7 +10,7 @@ const Card = () => {
             <p>
                 Social
             </p>
-            <Divider />
+            <Divider color={"$primary10"}/>
             <Anchor href='https://twitter.com' class="row" external>Twitter</Anchor>
             <Anchor href='https://noise.cash' class="row" external>Noise</Anchor>
             <Anchor href='https://memo.cash' class="row" external>Memo</Anchor>
@@ -22,8 +22,9 @@ const Card = () => {
             <p>
                 Dev
             </p>
-            <Divider />
+            <Divider color={"$accent10"}/>
             <Anchor href='https://github.com' class="row" external>Github</Anchor>
+            <Anchor href='https://gitlab.com' class="row" external>Gitlab</Anchor>
             <Anchor href='https://gist.github.com' class="row" external>Gist</Anchor>
             <Anchor href='https://web.compass.lighthouselabs.ca/' class="row" external>Compass</Anchor>
             <Anchor href='https://udemy.com' class="row" external>Udemy</Anchor>
@@ -34,7 +35,7 @@ const Card = () => {
             <p>
                 Media
             </p>
-            <Divider />
+            <Divider color={"$warning10"}/>
             <Anchor href='https://torrents.jettscythe.local' class="row" external>Torrents</Anchor>
             <Anchor href='https://jellyfin.jettscythe.xyz' class="row" external>Jellyfin</Anchor>
             <Anchor href='https://youtube.com' class="row" external>Youtube</Anchor>
@@ -46,7 +47,9 @@ const Card = () => {
             <p>
                 Local
             </p>
-            <Divider />
+            <Divider color={"$success10"}/>
+              <Anchor href='https://explorer.jettscythe.local' class="row" external>BCH explorer</Anchor>
+              <Anchor href='https://address.jettscythe.local' class="row" external>addr explorer</Anchor>
               <Anchor href='https://sonarr.jettscythe.local' class="row" external>sonarr</Anchor>
               <Anchor href='https://radarr.jettscythe.local' class="row" external>radarr</Anchor>
               <Anchor href='https://lidarr.jettscythe.local' class="row" external>lidarr</Anchor>

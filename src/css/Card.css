@@ -6,6 +6,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -13,10 +15,8 @@ body {
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
 .row {
   padding-top: 2%;
-  margin: 0 -5px;
 }
 
 /* Clear floats after the columns */
@@ -39,12 +39,10 @@ body {
   body {
     overflow-x: hidden;
   }
-  .row {
-    padding-left: 5%;
-  }
   .column {
     width: 95%;
     display: block;
     margin-bottom: 20px;
+    margin-left: 2%;
   }
 }
