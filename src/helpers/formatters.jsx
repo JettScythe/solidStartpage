@@ -9,6 +9,17 @@ const formatTime = (h, m, s) => {
   return `${h}:${m}:${s}`;
 };
 
+const makeClock = (s) => {
+  const days = Math.floor(s / 86400);
+  s -= days * 86400;
+  const hours = Math.floor(s / 3600);
+  s -= hours * 3600
+  const minutes = Math.floor(s / 60);
+  s -= minutes * 60
+  const seconds = s % 60
+  return `${days} days ${hours}:${minutes}:${seconds}`
+};
+
 const formatSearchProviderURL = (searchProvider) => {
   let suffix = "/search?q=";
   let prefix = "";
@@ -31,4 +42,4 @@ const formatSearchProviderURL = (searchProvider) => {
   return `https://${prefix}${searchProvider}${tld}${suffix}`
 }
 
-export { formatSmallTime, formatTime, formatSearchProviderURL };
+export { formatSmallTime, formatTime, makeClock, formatSearchProviderURL };
