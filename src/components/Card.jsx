@@ -118,16 +118,16 @@ const Card = () => {
           <div class="card">
             <p>Admin</p>
             <Divider color={"$danger10"} />
-            <Anchor href="192.168.88.228/admin" class="row" external>
+            <Anchor href="http://192.168.88.228/admin" class="row" external>
               Pi-hole (main)
             </Anchor>
             <Anchor href="https://192.168.88.238:8006" class="row" external>
               Proxmox
             </Anchor>
-            <Anchor href="192.168.88.252" class="row" external>
+            <Anchor href="http://192.168.88.252" class="row" external>
               Asus
             </Anchor>
-            <Anchor href="192.168.88.1:8080" class="row" external>
+            <Anchor href="http://192.168.88.1:8080" class="row" external>
               Mikrotik
             </Anchor>
             <Anchor href="https://192.168.88.237" class="row" external>
