@@ -81,18 +81,11 @@ const Card = () => {
             <p>Local</p>
             <Divider color={"$success10"} />
             <Anchor
-              href="https://explorer.jettscythe.local"
+              href="https://grafana.jettscythe.local"
               class="row"
               external
             >
-              BCH explorer
-            </Anchor>
-            <Anchor
-              href="https://address.jettscythe.local"
-              class="row"
-              external
-            >
-              addr explorer
+              grafana
             </Anchor>
             <Anchor href="https://sonarr.jettscythe.local" class="row" external>
               sonarr
