@@ -4,8 +4,6 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 import { Container, Divider, Flex } from "@hope-ui/solid";
 import "./css/App.css";
-import bg from "./assets/bg.jpeg";
-import Countdown from "./components/Countdown";
 
 function App() {
   return (
