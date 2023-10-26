@@ -9,17 +9,11 @@ const Card = () => {
           <div class="card">
             <p>Social</p>
             <Divider color={"$primary10"} />
-            <Anchor href="https://twitter.com" class="row" external>
-              Twitter
-            </Anchor>
-            <Anchor href="https://noise.cash" class="row" external>
-              Noise
+            <Anchor href="https://x.com" class="row" external>
+              X
             </Anchor>
             <Anchor href="https://memo.cash" class="row" external>
               Memo
-            </Anchor>
-            <Anchor href="https://member.cash" class="row" external>
-              Member
             </Anchor>
           </div>
         </div>
@@ -27,9 +21,6 @@ const Card = () => {
           <div class="card">
             <p>Dev</p>
             <Divider color={"$accent10"} />
-            <Anchor href="https://code.jettscythe.xyz" class="row" external>
-              Code Cloud
-            </Anchor>
             <Anchor href="https://github.com" class="row" external>
               Github
             </Anchor>
@@ -39,29 +30,12 @@ const Card = () => {
             <Anchor href="https://gist.github.com" class="row" external>
               Gist
             </Anchor>
-            <Anchor
-              href="https://web.compass.lighthouselabs.ca/"
-              class="row"
-              external
-            >
-              Compass
-            </Anchor>
-            <Anchor href="https://udemy.com" class="row" external>
-              Udemy
-            </Anchor>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <p>Media</p>
             <Divider color={"$warning10"} />
-            <Anchor
-              href="https://torrents.jettscythe.local"
-              class="row"
-              external
-            >
-              Torrents
-            </Anchor>
             <Anchor href="https://jellyfin.jettscythe.xyz" class="row" external>
               Jellyfin
             </Anchor>
@@ -71,19 +45,35 @@ const Card = () => {
             <Anchor href="https://seerr.jettscythe.local" class="row" external>
               Seerr
             </Anchor>
-            <Anchor href="https://open.spotify.com/" class="row" external>
-              Spotify
-            </Anchor>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <p>Local</p>
-            <Divider color={"$success10"} />
+        <div className="column">
+          <div className="card">
+            <p>Admin</p>
+            <Divider color={"$danger10"} />
+            <Anchor href="http://192.168.88.228/admin" class="row" external>
+              Pi-hole (main)
+            </Anchor>
+            <Anchor href="https://192.168.88.238:8006" class="row" external>
+              Proxmox
+            </Anchor>
+            <Anchor href="http://192.168.88.252" class="row" external>
+              Asus
+            </Anchor>
+            <Anchor href="https://192.168.88.237" class="row" external>
+              IDRAC
+            </Anchor>
             <Anchor
-              href="https://grafana.jettscythe.local"
-              class="row"
-              external
+                href="https://torrents.jettscythe.local"
+                class="row"
+                external
+            >
+              Torrents
+            </Anchor>
+            <Anchor
+                href="https://metrics.jettscythe.xyz"
+                class="row"
+                external
             >
               grafana
             </Anchor>
@@ -97,37 +87,11 @@ const Card = () => {
               lidarr
             </Anchor>
             <Anchor
-              href="https://prowlarr.jettscythe.local"
-              class="row"
-              external
+                href="https://prowlarr.jettscythe.local"
+                class="row"
+                external
             >
               prowlarr
-            </Anchor>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <p>Admin</p>
-            <Divider color={"$danger10"} />
-            <Anchor href="http://192.168.88.228/admin" class="row" external>
-              Pi-hole (main)
-            </Anchor>
-            <Anchor href="https://192.168.88.238:8006" class="row" external>
-              Proxmox
-            </Anchor>
-            <Anchor href="http://192.168.88.252" class="row" external>
-              Asus
-            </Anchor>
-            <Anchor href="http://192.168.88.1:8080" class="row" external>
-              Mikrotik
-            </Anchor>
-            <Anchor href="https://192.168.88.237" class="row" external>
-              IDRAC
-            </Anchor>
-            <Anchor href="https://kuma.jettscythe.local" class="row" external>
-              Kuma
             </Anchor>
           </div>
         </div>
