@@ -1,10 +1,6 @@
 import "../css/Grafana.css"
 
 const Grafana = () => {
-    return (
-        <div class="grafana">
-            <iframe src="https://grafana.jettscythe.local/d/OTLC2jHWz/bitcoin-cash-bch?orgId=1&refresh=5s&from=now-2d&to=now&kiosk" allowfullscreen/>
-        </div>
-    )
+    return <embed src="https://metrics.jettscythe.xyz/public-dashboards/0c3823b0103d4fa8a90d03f3f715742f" width="100%" height="100%"/>;
 }
 export default Grafana;
