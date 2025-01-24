@@ -1,4 +1,4 @@
-import { Anchor, Divider } from "@hope-ui/solid";
+import {Anchor, Divider} from "@hope-ui/solid";
 import "../css/Card.css";
 
 const Card = () => {
@@ -39,6 +39,13 @@ const Card = () => {
                 external
             >
               Torrents
+            </Anchor>
+            <Anchor
+                href="https://sabnzbd.jettscythe.home.arpa"
+                class="row"
+                external
+            >
+              Sabnzbd
             </Anchor>
             <Anchor
                 href="https://metrics.jettscythe.xyz"
