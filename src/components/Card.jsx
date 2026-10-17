@@ -88,6 +88,9 @@ const Card = () => {
             <Anchor href="https://lidarr.jettscythe.home.arpa" class="row" external>
               lidarr
             </Anchor>
+            <Anchor href="https://bindery.jettscythe.home.arpa" class="row" external>
+              bindery
+            </Anchor>
           </div>
         </div>
       </div>
